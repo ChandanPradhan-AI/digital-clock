@@ -14,7 +14,8 @@ A sleek and responsive digital clock built for the web . Displays Current Date a
 
 - [React](https://react.dev/) - The library for web and native user interfaces!
 - [TailwindCSS](https://tailwindcss.com/) - A utility-first CSS framework for rapid UI development.
-- [shadcn UI](https://ui.shadcn.com/) - A community-driven collection of custom UI components. - [magicUI](https://magicui.design/) - components and effects library
+- [shadcn UI](https://ui.shadcn.com/) - A community-driven collection of custom UI components.
+- [magicUI](https://magicui.design/) - components and effects library
 - [Next.js](https://nextjs.org/) - The React Framework for Production.
 - [date-fns](https://date-fns.org/)- Modern JavaScript date utility library
 
