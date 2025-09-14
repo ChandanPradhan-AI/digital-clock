@@ -9,14 +9,15 @@ const Clock = () => {
 	const [seconds, setSeconds] = useState(parseInt("00"));
 	const [meridiem, setMeridiem] = useState("XX");
 	const [date, setDate] = useState(format(new Date(), "eeee, dd LLLL yyyy"));
+	// const [timeFormat, setTimeFormat] = useState<boolean>(true);
 
 	useEffect(() => {
 		const interval = setInterval(() => {
+			// setHours(parseInt(format(new Date(), timeFormat ? "HH" : "hh")));
 			setHours(parseInt(format(new Date(), "hh")));
 			setMinutes(parseInt(format(new Date(), "mm")));
 			setSeconds(parseInt(format(new Date(), "ss")));
 			setMeridiem(format(new Date(), "a"));
-
 			setDate(format(new Date(), "eeee, dd LLLL yyyy"));
 		}, 1000);
 
@@ -25,7 +26,7 @@ const Clock = () => {
 	return (
 		<>
 			<div className="space-y-4">
-				<div className="flex items-center gap-1 font-mono text-9xl">
+				<div className="flex justify-center gap-1 font-mono text-9xl">
 					<div className="">{hours}</div>{" "}
 					<span className="animate-pulse">:</span>
 					<div className="">{minutes}</div>
